@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "rc_pwm_pkg__py",
+		"source" : "/home/aimaim/rc_ws/build/rc_pwm_pkg/rc_pwm_pkg__py"
+	}
+}

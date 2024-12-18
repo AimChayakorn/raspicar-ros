@@ -1,0 +1,25 @@
+[3.080s] Invoking command in '/home/aimaim/rc_ws/src/rc': PYTHONPATH=/home/aimaim/rc_ws/build/rc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rc build --build-base /home/aimaim/rc_ws/build/rc/build install --record /home/aimaim/rc_ws/build/rc/install.log --single-version-externally-managed install_data
+[4.220s] running egg_info
+[4.222s] writing ../../build/rc/rc.egg-info/PKG-INFO
+[4.223s] writing dependency_links to ../../build/rc/rc.egg-info/dependency_links.txt
+[4.224s] writing entry points to ../../build/rc/rc.egg-info/entry_points.txt
+[4.225s] writing requirements to ../../build/rc/rc.egg-info/requires.txt
+[4.226s] writing top-level names to ../../build/rc/rc.egg-info/top_level.txt
+[4.233s] reading manifest file '../../build/rc/rc.egg-info/SOURCES.txt'
+[4.235s] adding license file 'LICENSE'
+[4.237s] writing manifest file '../../build/rc/rc.egg-info/SOURCES.txt'
+[4.238s] running build
+[4.238s] running build_py
+[4.238s] copying rc/rc_control.py -> /home/aimaim/rc_ws/build/rc/build/lib/rc
+[4.240s] running install
+[4.241s] running install_lib
+[4.244s] copying /home/aimaim/rc_ws/build/rc/build/lib/rc/rc_control.py -> /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc
+[4.247s] byte-compiling /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc/rc_control.py to rc_control.cpython-310.pyc
+[4.249s] running install_data
+[4.250s] running install_egg_info
+[4.257s] removing '/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc-0.0.0-py3.10.egg-info' (and everything under it)
+[4.259s] Copying ../../build/rc/rc.egg-info to /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc-0.0.0-py3.10.egg-info
+[4.263s] running install_scripts
+[4.338s] Installing listener script to /home/aimaim/rc_ws/install/rc/lib/rc
+[4.340s] writing list of installed files to '/home/aimaim/rc_ws/build/rc/install.log'
+[4.455s] Invoked command in '/home/aimaim/rc_ws/src/rc' returned '0': PYTHONPATH=/home/aimaim/rc_ws/build/rc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rc build --build-base /home/aimaim/rc_ws/build/rc/build install --record /home/aimaim/rc_ws/build/rc/install.log --single-version-externally-managed install_data

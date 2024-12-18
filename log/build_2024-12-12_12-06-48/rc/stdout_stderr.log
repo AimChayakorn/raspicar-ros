@@ -1,0 +1,36 @@
+running egg_info
+creating ../../build/rc/rc.egg-info
+writing ../../build/rc/rc.egg-info/PKG-INFO
+writing dependency_links to ../../build/rc/rc.egg-info/dependency_links.txt
+writing entry points to ../../build/rc/rc.egg-info/entry_points.txt
+writing requirements to ../../build/rc/rc.egg-info/requires.txt
+writing top-level names to ../../build/rc/rc.egg-info/top_level.txt
+writing manifest file '../../build/rc/rc.egg-info/SOURCES.txt'
+reading manifest file '../../build/rc/rc.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/rc/rc.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/aimaim/rc_ws/build/rc/build
+creating /home/aimaim/rc_ws/build/rc/build/lib
+creating /home/aimaim/rc_ws/build/rc/build/lib/rc
+copying rc/__init__.py -> /home/aimaim/rc_ws/build/rc/build/lib/rc
+copying rc/rc_control.py -> /home/aimaim/rc_ws/build/rc/build/lib/rc
+running install
+running install_lib
+creating /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc
+copying /home/aimaim/rc_ws/build/rc/build/lib/rc/__init__.py -> /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc
+copying /home/aimaim/rc_ws/build/rc/build/lib/rc/rc_control.py -> /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc
+byte-compiling /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc/rc_control.py to rc_control.cpython-310.pyc
+running install_data
+creating /home/aimaim/rc_ws/install/rc/share/ament_index
+creating /home/aimaim/rc_ws/install/rc/share/ament_index/resource_index
+creating /home/aimaim/rc_ws/install/rc/share/ament_index/resource_index/packages
+copying resource/rc -> /home/aimaim/rc_ws/install/rc/share/ament_index/resource_index/packages
+copying package.xml -> /home/aimaim/rc_ws/install/rc/share/rc
+running install_egg_info
+Copying ../../build/rc/rc.egg-info to /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc-0.0.0-py3.10.egg-info
+running install_scripts
+Installing rc_control script to /home/aimaim/rc_ws/install/rc/lib/rc
+writing list of installed files to '/home/aimaim/rc_ws/build/rc/install.log'

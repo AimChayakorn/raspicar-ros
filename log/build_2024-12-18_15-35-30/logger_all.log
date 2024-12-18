@@ -1,0 +1,202 @@
+[0.672s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.673s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffb67f6c50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb68dfbb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb68dfbb0>>, mixin_verb=('build',))
+[1.921s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.921s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.922s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.922s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.922s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.922s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.922s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/aimaim/rc_ws'
+[1.923s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.923s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.972s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.972s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.972s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.973s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.973s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.973s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.973s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc) by extensions ['ignore', 'ignore_ament_install']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc) by extension 'ignore'
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc) by extension 'ignore_ament_install'
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc) by extensions ['colcon_pkg']
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc) by extension 'colcon_pkg'
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc) by extensions ['colcon_meta']
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc) by extension 'colcon_meta'
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc) by extensions ['ros']
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc) by extension 'ros'
+[1.989s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rc' with type 'ros.ament_python' and name 'rc'
+[1.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc_pwm_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc_pwm_pkg) by extension 'ignore'
+[1.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc_pwm_pkg) by extension 'ignore_ament_install'
+[1.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc_pwm_pkg) by extensions ['colcon_pkg']
+[1.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc_pwm_pkg) by extension 'colcon_pkg'
+[1.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc_pwm_pkg) by extensions ['colcon_meta']
+[1.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc_pwm_pkg) by extension 'colcon_meta'
+[1.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc_pwm_pkg) by extensions ['ros']
+[1.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/rc_pwm_pkg) by extension 'ros'
+[1.994s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rc_pwm_pkg' with type 'ros.ament_cmake' and name 'rc_pwm_pkg'
+[1.994s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.994s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.994s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.994s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.995s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.221s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 341 installed packages in /home/aimaim/ros2_humble/ros2-linux
+[2.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.494s] Level 5:colcon.colcon_core.verb:set package 'rc_pwm_pkg' build argument 'cmake_args' from command line to 'None'
+[2.494s] Level 5:colcon.colcon_core.verb:set package 'rc_pwm_pkg' build argument 'cmake_target' from command line to 'None'
+[2.495s] Level 5:colcon.colcon_core.verb:set package 'rc_pwm_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.495s] Level 5:colcon.colcon_core.verb:set package 'rc_pwm_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.495s] Level 5:colcon.colcon_core.verb:set package 'rc_pwm_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.495s] Level 5:colcon.colcon_core.verb:set package 'rc_pwm_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.495s] Level 5:colcon.colcon_core.verb:set package 'rc_pwm_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.495s] Level 5:colcon.colcon_core.verb:set package 'rc_pwm_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.495s] Level 5:colcon.colcon_core.verb:set package 'rc_pwm_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.495s] DEBUG:colcon.colcon_core.verb:Building package 'rc_pwm_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aimaim/rc_ws/build/rc_pwm_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aimaim/rc_ws/install/rc_pwm_pkg', 'merge_install': False, 'path': '/home/aimaim/rc_ws/src/rc_pwm_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.497s] Level 5:colcon.colcon_core.verb:set package 'rc' build argument 'cmake_args' from command line to 'None'
+[2.497s] Level 5:colcon.colcon_core.verb:set package 'rc' build argument 'cmake_target' from command line to 'None'
+[2.497s] Level 5:colcon.colcon_core.verb:set package 'rc' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.497s] Level 5:colcon.colcon_core.verb:set package 'rc' build argument 'cmake_clean_cache' from command line to 'False'
+[2.497s] Level 5:colcon.colcon_core.verb:set package 'rc' build argument 'cmake_clean_first' from command line to 'False'
+[2.497s] Level 5:colcon.colcon_core.verb:set package 'rc' build argument 'cmake_force_configure' from command line to 'False'
+[2.498s] Level 5:colcon.colcon_core.verb:set package 'rc' build argument 'ament_cmake_args' from command line to 'None'
+[2.498s] Level 5:colcon.colcon_core.verb:set package 'rc' build argument 'catkin_cmake_args' from command line to 'None'
+[2.498s] Level 5:colcon.colcon_core.verb:set package 'rc' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.498s] DEBUG:colcon.colcon_core.verb:Building package 'rc' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aimaim/rc_ws/build/rc', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aimaim/rc_ws/install/rc', 'merge_install': False, 'path': '/home/aimaim/rc_ws/src/rc', 'symlink_install': False, 'test_result_base': None}
+[2.498s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.502s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aimaim/rc_ws/src/rc_pwm_pkg' with build type 'ament_cmake'
+[2.503s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aimaim/rc_ws/src/rc_pwm_pkg'
+[2.523s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.524s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.524s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aimaim/rc_ws/build/rc_pwm_pkg': /usr/bin/cmake /home/aimaim/rc_ws/src/rc_pwm_pkg -DCMAKE_INSTALL_PREFIX=/home/aimaim/rc_ws/install/rc_pwm_pkg
+[11.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aimaim/rc_ws/build/rc_pwm_pkg' returned '0': /usr/bin/cmake /home/aimaim/rc_ws/src/rc_pwm_pkg -DCMAKE_INSTALL_PREFIX=/home/aimaim/rc_ws/install/rc_pwm_pkg
+[11.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aimaim/rc_ws/build/rc_pwm_pkg': /usr/bin/cmake --build /home/aimaim/rc_ws/build/rc_pwm_pkg -- -j4 -l4
+[25.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aimaim/rc_ws/build/rc_pwm_pkg' returned '0': /usr/bin/cmake --build /home/aimaim/rc_ws/build/rc_pwm_pkg -- -j4 -l4
+[25.187s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aimaim/rc_ws/build/rc_pwm_pkg': /usr/bin/cmake --install /home/aimaim/rc_ws/build/rc_pwm_pkg
+[25.563s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rc_pwm_pkg)
+[25.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aimaim/rc_ws/build/rc_pwm_pkg' returned '0': /usr/bin/cmake --install /home/aimaim/rc_ws/build/rc_pwm_pkg
+[25.587s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg' for CMake module files
+[25.592s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg' for CMake config files
+[25.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('rc_pwm_pkg', 'cmake_prefix_path')
+[25.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/cmake_prefix_path.ps1'
+[25.600s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/cmake_prefix_path.dsv'
+[25.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/cmake_prefix_path.sh'
+[25.607s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg/lib'
+[25.608s] Level 1:colcon.colcon_core.shell:create_environment_hook('rc_pwm_pkg', 'ld_library_path_lib')
+[25.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/ld_library_path_lib.ps1'
+[25.610s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/ld_library_path_lib.dsv'
+[25.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/ld_library_path_lib.sh'
+[25.614s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg/bin'
+[25.614s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg/lib/pkgconfig/rc_pwm_pkg.pc'
+[25.617s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg/lib/python3.10/site-packages'
+[25.618s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg/bin'
+[25.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.ps1'
+[25.624s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.dsv'
+[25.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.sh'
+[25.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.bash'
+[25.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.zsh'
+[25.640s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aimaim/rc_ws/install/rc_pwm_pkg/share/colcon-core/packages/rc_pwm_pkg)
+[25.643s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rc_pwm_pkg)
+[25.644s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg' for CMake module files
+[25.648s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg' for CMake config files
+[25.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('rc_pwm_pkg', 'cmake_prefix_path')
+[25.652s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/cmake_prefix_path.ps1'
+[25.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/cmake_prefix_path.dsv'
+[25.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/cmake_prefix_path.sh'
+[25.659s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg/lib'
+[25.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('rc_pwm_pkg', 'ld_library_path_lib')
+[25.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/ld_library_path_lib.ps1'
+[25.662s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/ld_library_path_lib.dsv'
+[25.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/hook/ld_library_path_lib.sh'
+[25.666s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg/bin'
+[25.666s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg/lib/pkgconfig/rc_pwm_pkg.pc'
+[25.667s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg/lib/python3.10/site-packages'
+[25.668s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc_pwm_pkg/bin'
+[25.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.ps1'
+[25.672s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.dsv'
+[25.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.sh'
+[25.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.bash'
+[25.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.zsh'
+[25.681s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aimaim/rc_ws/install/rc_pwm_pkg/share/colcon-core/packages/rc_pwm_pkg)
+[25.682s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/aimaim/rc_ws/src/rc' with build type 'ament_python'
+[25.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('rc', 'ament_prefix_path')
+[25.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc/share/rc/hook/ament_prefix_path.ps1'
+[25.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aimaim/rc_ws/install/rc/share/rc/hook/ament_prefix_path.dsv'
+[25.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc/share/rc/hook/ament_prefix_path.sh'
+[25.694s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[25.694s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[27.024s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/aimaim/rc_ws/src/rc'
+[27.025s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[27.025s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[29.318s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aimaim/rc_ws/src/rc': AMENT_PREFIX_PATH=/home/aimaim/rc_ws/install/rc_pwm_pkg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aimaim/rc_ws/install/rc_pwm_pkg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/aimaim/rc_ws/install/rc_pwm_pkg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/aimaim/rc_ws/build/rc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages:/home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rc build --build-base /home/aimaim/rc_ws/build/rc/build install --record /home/aimaim/rc_ws/build/rc/install.log --single-version-externally-managed install_data
+[30.727s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc' for CMake module files
+[30.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aimaim/rc_ws/src/rc' returned '0': AMENT_PREFIX_PATH=/home/aimaim/rc_ws/install/rc_pwm_pkg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aimaim/rc_ws/install/rc_pwm_pkg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/aimaim/rc_ws/install/rc_pwm_pkg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/aimaim/rc_ws/build/rc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages:/home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rc build --build-base /home/aimaim/rc_ws/build/rc/build install --record /home/aimaim/rc_ws/build/rc/install.log --single-version-externally-managed install_data
+[30.730s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc' for CMake config files
+[30.735s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc/lib'
+[30.736s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc/bin'
+[30.736s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc/lib/pkgconfig/rc.pc'
+[30.738s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages'
+[30.738s] Level 1:colcon.colcon_core.shell:create_environment_hook('rc', 'pythonpath')
+[30.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc/share/rc/hook/pythonpath.ps1'
+[30.742s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aimaim/rc_ws/install/rc/share/rc/hook/pythonpath.dsv'
+[30.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aimaim/rc_ws/install/rc/share/rc/hook/pythonpath.sh'
+[30.747s] Level 1:colcon.colcon_core.environment:checking '/home/aimaim/rc_ws/install/rc/bin'
+[30.747s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rc)
+[30.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc/share/rc/package.ps1'
+[30.751s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aimaim/rc_ws/install/rc/share/rc/package.dsv'
+[30.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc/share/rc/package.sh'
+[30.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc/share/rc/package.bash'
+[30.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/aimaim/rc_ws/install/rc/share/rc/package.zsh'
+[30.760s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aimaim/rc_ws/install/rc/share/colcon-core/packages/rc)
+[30.761s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[30.762s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[30.762s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[30.762s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[30.788s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[30.788s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[30.788s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[30.789s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[30.863s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[30.863s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[30.865s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aimaim/rc_ws/install/local_setup.ps1'
+[30.870s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aimaim/rc_ws/install/_local_setup_util_ps1.py'
+[30.878s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aimaim/rc_ws/install/setup.ps1'
+[30.883s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aimaim/rc_ws/install/local_setup.sh'
+[30.887s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aimaim/rc_ws/install/_local_setup_util_sh.py'
+[30.891s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aimaim/rc_ws/install/setup.sh'
+[30.896s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aimaim/rc_ws/install/local_setup.bash'
+[30.900s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aimaim/rc_ws/install/setup.bash'
+[30.905s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aimaim/rc_ws/install/local_setup.zsh'
+[30.909s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aimaim/rc_ws/install/setup.zsh'

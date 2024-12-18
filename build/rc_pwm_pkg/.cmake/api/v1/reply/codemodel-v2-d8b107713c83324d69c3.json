@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4e862fbc7b093cfe3662.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "rc_pwm_pkg__py",
+					"jsonFile" : "directory-rc_pwm_pkg__py-b74482673a4083037348.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/aimaim/rc_ws/build/rc_pwm_pkg/rc_pwm_pkg__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "rc_pwm_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_rc_pwm_pkg_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_rc_pwm_pkg_egg-474f9a7ce86cd33c18b1.json",
+					"name" : "ament_cmake_python_build_rc_pwm_pkg_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_rc_pwm_pkg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_rc_pwm_pkg-665de7b4b8b468dec9ad.json",
+					"name" : "ament_cmake_python_copy_rc_pwm_pkg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg-1b4b6bf1d0c4f2c67618.json",
+					"name" : "rc_pwm_pkg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__cpp-ab84429a34d7a65cda9b.json",
+					"name" : "rc_pwm_pkg__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rc_pwm_pkg__py::@44341d87f72776312ccc",
+					"jsonFile" : "target-rc_pwm_pkg__py-3788a7145a1296ee4805.json",
+					"name" : "rc_pwm_pkg__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__rosidl_generator_c-34ebf07f45e25bb2df6b.json",
+					"name" : "rc_pwm_pkg__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__rosidl_generator_py-d52a77f7e9b929b8eb05.json",
+					"name" : "rc_pwm_pkg__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__rosidl_typesupport_c-7e4f86fa1beec0df6297.json",
+					"name" : "rc_pwm_pkg__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__rosidl_typesupport_c__pyext-7153025072a43451c78d.json",
+					"name" : "rc_pwm_pkg__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__rosidl_typesupport_cpp-63a14cd498e2b86a21d5.json",
+					"name" : "rc_pwm_pkg__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__rosidl_typesupport_fastrtps_c-6baef5434963309a4855.json",
+					"name" : "rc_pwm_pkg__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__rosidl_typesupport_fastrtps_c__pyext-25babdbb795cbd899944.json",
+					"name" : "rc_pwm_pkg__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__rosidl_typesupport_fastrtps_cpp-8b20de949ca00ccf5583.json",
+					"name" : "rc_pwm_pkg__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__rosidl_typesupport_introspection_c-e2f337c7ad14893ceb72.json",
+					"name" : "rc_pwm_pkg__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__rosidl_typesupport_introspection_c__pyext-b819c018ade96e4b40fd.json",
+					"name" : "rc_pwm_pkg__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg__rosidl_typesupport_introspection_cpp-740f598302ce9bf3e39e.json",
+					"name" : "rc_pwm_pkg__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rc_pwm_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rc_pwm_pkg_uninstall-4f16d74b641cd24de127.json",
+					"name" : "rc_pwm_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-900e9f7b8f3fe824157f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/aimaim/rc_ws/build/rc_pwm_pkg",
+		"source" : "/home/aimaim/rc_ws/src/rc_pwm_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

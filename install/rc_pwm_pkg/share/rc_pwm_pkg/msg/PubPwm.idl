@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from rc_pwm_pkg/msg/PubPwm.msg
+// generated code does not contain a copyright notice
+
+
+module rc_pwm_pkg {
+  module msg {
+    struct PubPwm {
+      int64 left_pwm;
+
+      int64 right_pwm;
+    };
+  };
+};

@@ -1,0 +1,5 @@
+  File "/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc/rc_control.py", line 4
+    import rc_pwm_pkg.msg import PubPwm
+                          ^^^^^^
+SyntaxError: invalid syntax
+
