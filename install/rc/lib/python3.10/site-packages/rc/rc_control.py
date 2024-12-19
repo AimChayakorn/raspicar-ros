@@ -18,11 +18,11 @@ class MinimalSubscriber(Node):
 
         
         GPIO.setmode(GPIO.BCM)
-        self.gpio_pin1 = 17 # motor left
-        self.gpio_pin2 = 27
+        self.gpio_pin3 = 17 # motor left
+        self.gpio_pin4 = 27
 
-        self.gpio_pin3 = 23 # motor right
-        self.gpio_pin4 = 24
+        self.gpio_pin1 = 23 # motor right
+        self.gpio_pin2 = 24
 
         freq = 1000 #1kHz frequency
         GPIO.setup(self.gpio_pin1, GPIO.OUT)
@@ -41,8 +41,18 @@ class MinimalSubscriber(Node):
         self.pwm_right.start(100)
 
     def listener_callback(self, msg):
-        self.pwm_left.ChangeDutyCycle(100 - msg.left_pwm)
-        self.pwm_right.ChangeDutyCycle(100 - msg.right_pwm)
+        l_pwm = 100 - msg.left_pwm
+        r_pwm = 100 - msg.right_pwm
+        if l_pwm < 0:
+            l_pwm = 0
+        elif l_pwm > 100:
+            l_pwm = 100
+        if r_pwm < 0:
+            r_pwm = 100
+        elif r_pwm > 100:
+            r_pwm = 100
+        self.pwm_left.ChangeDutyCycle(l_pwm)
+        self.pwm_right.ChangeDutyCycle(r_pwm)
         self.get_logger().info(f'Current left : {msg.left_pwm} , right : {msg.right_pwm}')
 
     def destroy_node(self):
