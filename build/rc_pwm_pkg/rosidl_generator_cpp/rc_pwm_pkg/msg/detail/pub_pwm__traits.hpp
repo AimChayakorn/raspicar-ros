@@ -25,6 +25,13 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: dirr
+  {
+    out << "dirr: ";
+    rosidl_generator_traits::value_to_yaml(msg.dirr, out);
+    out << ", ";
+  }
+
   // member: left_pwm
   {
     out << "left_pwm: ";
@@ -44,6 +51,16 @@ inline void to_block_style_yaml(
   const PubPwm & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: dirr
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "dirr: ";
+    rosidl_generator_traits::value_to_yaml(msg.dirr, out);
+    out << "\n";
+  }
+
   // member: left_pwm
   {
     if (indentation > 0) {

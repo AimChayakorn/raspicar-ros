@@ -40,13 +40,29 @@ private:
 class Init_PubPwm_left_pwm
 {
 public:
-  Init_PubPwm_left_pwm()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_PubPwm_left_pwm(::rc_pwm_pkg::msg::PubPwm & msg)
+  : msg_(msg)
   {}
   Init_PubPwm_right_pwm left_pwm(::rc_pwm_pkg::msg::PubPwm::_left_pwm_type arg)
   {
     msg_.left_pwm = std::move(arg);
     return Init_PubPwm_right_pwm(msg_);
+  }
+
+private:
+  ::rc_pwm_pkg::msg::PubPwm msg_;
+};
+
+class Init_PubPwm_dirr
+{
+public:
+  Init_PubPwm_dirr()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_PubPwm_left_pwm dirr(::rc_pwm_pkg::msg::PubPwm::_dirr_type arg)
+  {
+    msg_.dirr = std::move(arg);
+    return Init_PubPwm_left_pwm(msg_);
   }
 
 private:
@@ -64,7 +80,7 @@ template<>
 inline
 auto build<::rc_pwm_pkg::msg::PubPwm>()
 {
-  return rc_pwm_pkg::msg::builder::Init_PubPwm_left_pwm();
+  return rc_pwm_pkg::msg::builder::Init_PubPwm_dirr();
 }
 
 }  // namespace rc_pwm_pkg

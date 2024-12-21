@@ -50,6 +50,15 @@ bool rc_pwm_pkg__msg__pub_pwm__convert_from_py(PyObject * _pymsg, void * _ros_me
     assert(strncmp("rc_pwm_pkg.msg._pub_pwm.PubPwm", full_classname_dest, 30) == 0);
   }
   rc_pwm_pkg__msg__PubPwm * ros_message = _ros_message;
+  {  // dirr
+    PyObject * field = PyObject_GetAttrString(_pymsg, "dirr");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->dirr = PyLong_AsLongLong(field);
+    Py_DECREF(field);
+  }
   {  // left_pwm
     PyObject * field = PyObject_GetAttrString(_pymsg, "left_pwm");
     if (!field) {
@@ -90,6 +99,17 @@ PyObject * rc_pwm_pkg__msg__pub_pwm__convert_to_py(void * raw_ros_message)
     }
   }
   rc_pwm_pkg__msg__PubPwm * ros_message = (rc_pwm_pkg__msg__PubPwm *)raw_ros_message;
+  {  // dirr
+    PyObject * field = NULL;
+    field = PyLong_FromLongLong(ros_message->dirr);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "dirr", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // left_pwm
     PyObject * field = NULL;
     field = PyLong_FromLongLong(ros_message->left_pwm);

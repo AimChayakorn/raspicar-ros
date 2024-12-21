@@ -17,6 +17,7 @@ rc_pwm_pkg__msg__PubPwm__init(rc_pwm_pkg__msg__PubPwm * msg)
   if (!msg) {
     return false;
   }
+  // dirr
   // left_pwm
   // right_pwm
   return true;
@@ -28,6 +29,7 @@ rc_pwm_pkg__msg__PubPwm__fini(rc_pwm_pkg__msg__PubPwm * msg)
   if (!msg) {
     return;
   }
+  // dirr
   // left_pwm
   // right_pwm
 }
@@ -36,6 +38,10 @@ bool
 rc_pwm_pkg__msg__PubPwm__are_equal(const rc_pwm_pkg__msg__PubPwm * lhs, const rc_pwm_pkg__msg__PubPwm * rhs)
 {
   if (!lhs || !rhs) {
+    return false;
+  }
+  // dirr
+  if (lhs->dirr != rhs->dirr) {
     return false;
   }
   // left_pwm
@@ -57,6 +63,8 @@ rc_pwm_pkg__msg__PubPwm__copy(
   if (!input || !output) {
     return false;
   }
+  // dirr
+  output->dirr = input->dirr;
   // left_pwm
   output->left_pwm = input->left_pwm;
   // right_pwm

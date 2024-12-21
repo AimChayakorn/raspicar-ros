@@ -20,6 +20,7 @@ extern "C"
 /// Struct defined in msg/PubPwm in the package rc_pwm_pkg.
 typedef struct rc_pwm_pkg__msg__PubPwm
 {
+  int64_t dirr;
   int64_t left_pwm;
   int64_t right_pwm;
 } rc_pwm_pkg__msg__PubPwm;

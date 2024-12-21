@@ -1,0 +1,340 @@
+[0.000000] (-) TimerEvent: {}
+[0.001878] (rc_pwm_pkg) JobQueued: {'identifier': 'rc_pwm_pkg', 'dependencies': OrderedDict()}
+[0.002585] (rc) JobQueued: {'identifier': 'rc', 'dependencies': OrderedDict([('rc_pwm_pkg', '/home/aimaim/rc_ws/install/rc_pwm_pkg')])}
+[0.002838] (rc_pwm_pkg) JobStarted: {'identifier': 'rc_pwm_pkg'}
+[0.081503] (rc_pwm_pkg) JobProgress: {'identifier': 'rc_pwm_pkg', 'progress': 'cmake'}
+[0.084285] (rc_pwm_pkg) JobProgress: {'identifier': 'rc_pwm_pkg', 'progress': 'build'}
+[0.087279] (rc_pwm_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aimaim/rc_ws/build/rc_pwm_pkg', '--', '-j4', '-l4'], 'cwd': '/home/aimaim/rc_ws/build/rc_pwm_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,1318,0'), ('USER', 'aimaim'), ('SSH_CLIENT', '192.168.1.172 62297 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/aimaim/rc_ws/install/rc_pwm_pkg/lib:/home/aimaim/ros2_humble/ros2-linux/opt/rviz_ogre_vendor/lib:/home/aimaim/ros2_humble/ros2-linux/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/aimaim'), ('OLDPWD', '/home/aimaim'), ('TERM_PROGRAM_VERSION', '3.2a'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LC_TERMINAL_VERSION', '3.5.10'), ('COLCON_PREFIX_PATH', '/home/aimaim/ros2_humble/ros2-linux:/home/aimaim/rc_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aimaim'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/aimaim/ros2_humble/ros2-linux/lib/aarch64-linux-gnu/pkgconfig:/home/aimaim/ros2_humble/ros2-linux/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'screen'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/aimaim/ros2_humble/ros2-linux/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/aimaim/rc_ws/install/rc:/home/aimaim/rc_ws/install/rc_pwm_pkg:/home/aimaim/ros2_humble/ros2-linux'), ('SHELL', '/bin/bash'), ('ROS_DISCOVERY_SERVER', '192.168.1.118:11811'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_TERMINAL', 'iTerm2'), ('PWD', '/home/aimaim/rc_ws/build/rc_pwm_pkg'), ('SSH_CONNECTION', '192.168.1.172 62297 192.168.1.190 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages:/home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages:/home/aimaim/ros2_humble/ros2-linux/local/lib/python3.10/dist-packages:/home/aimaim/ros2_humble/ros2-linux/lib/python3.10/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/home/aimaim/rc_ws/install/rc_pwm_pkg:/home/aimaim/ros2_humble/ros2-linux:/home/aimaim/rc_ws/install/rc')]), 'shell': False}
+[0.103638] (-) TimerEvent: {}
+[0.200450] (rc_pwm_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/home/aimaim/ros2_humble/ros2-linux/share/ament_cmake/cmake)\n'}
+[0.203769] (-) TimerEvent: {}
+[0.304379] (-) TimerEvent: {}
+[0.405017] (-) TimerEvent: {}
+[0.505704] (-) TimerEvent: {}
+[0.606385] (-) TimerEvent: {}
+[0.707198] (-) TimerEvent: {}
+[0.763362] (rc_pwm_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/home/aimaim/ros2_humble/ros2-linux/share/ament_lint_auto/cmake)\n'}
+[0.807316] (-) TimerEvent: {}
+[0.907962] (-) TimerEvent: {}
+[1.008797] (-) TimerEvent: {}
+[1.044163] (rc_pwm_pkg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/home/aimaim/ros2_humble/ros2-linux/share/rosidl_default_generators/cmake)\n'}
+[1.050905] (rc_pwm_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.062807] (rc_pwm_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/home/aimaim/ros2_humble/ros2-linux/share/rosidl_adapter/cmake)\n'}
+[1.108946] (-) TimerEvent: {}
+[1.209589] (-) TimerEvent: {}
+[1.217285] (rc_pwm_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.309778] (-) TimerEvent: {}
+[1.410422] (-) TimerEvent: {}
+[1.511041] (-) TimerEvent: {}
+[1.611681] (-) TimerEvent: {}
+[1.712314] (-) TimerEvent: {}
+[1.813032] (-) TimerEvent: {}
+[1.913858] (-) TimerEvent: {}
+[2.014750] (-) TimerEvent: {}
+[2.111627] (rc_pwm_pkg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/home/aimaim/ros2_humble/ros2-linux/share/ament_cmake_ros/cmake)\n'}
+[2.114874] (-) TimerEvent: {}
+[2.215457] (-) TimerEvent: {}
+[2.316038] (-) TimerEvent: {}
+[2.416766] (-) TimerEvent: {}
+[2.517695] (-) TimerEvent: {}
+[2.618369] (-) TimerEvent: {}
+[2.718991] (-) TimerEvent: {}
+[2.819643] (-) TimerEvent: {}
+[2.915099] (rc_pwm_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.919811] (-) TimerEvent: {}
+[3.020590] (-) TimerEvent: {}
+[3.121346] (-) TimerEvent: {}
+[3.222108] (-) TimerEvent: {}
+[3.323061] (-) TimerEvent: {}
+[3.423692] (-) TimerEvent: {}
+[3.524369] (-) TimerEvent: {}
+[3.625078] (-) TimerEvent: {}
+[3.725786] (-) TimerEvent: {}
+[3.826453] (-) TimerEvent: {}
+[3.927030] (-) TimerEvent: {}
+[3.991960] (rc_pwm_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.027194] (-) TimerEvent: {}
+[4.096925] (rc_pwm_pkg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/home/aimaim/ros2_humble/ros2-linux/share/python_cmake_module/cmake)\n'}
+[4.127328] (-) TimerEvent: {}
+[4.204180] (rc_pwm_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.204749] (rc_pwm_pkg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.205051] (rc_pwm_pkg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[4.227508] (-) TimerEvent: {}
+[4.261967] (rc_pwm_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.270401] (rc_pwm_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.288138] (rc_pwm_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.327681] (-) TimerEvent: {}
+[4.428327] (-) TimerEvent: {}
+[4.443645] (rc_pwm_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[4.487145] (rc_pwm_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/aimaim/rc_ws/build/rc_pwm_pkg\n'}
+[4.528540] (-) TimerEvent: {}
+[4.593091] (rc_pwm_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rc_pwm_pkg__rosidl_generator_c\x1b[0m\n'}
+[4.628776] (-) TimerEvent: {}
+[4.632364] (rc_pwm_pkg) StdoutLine: {'line': b'[  2%] Built target rc_pwm_pkg__cpp\n'}
+[4.647283] (rc_pwm_pkg) StdoutLine: {'line': b'[ 12%] Built target rc_pwm_pkg__rosidl_generator_c\n'}
+[4.679881] (rc_pwm_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rc_pwm_pkg__rosidl_typesupport_cpp\x1b[0m\n'}
+[4.684343] (rc_pwm_pkg) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_rc_pwm_pkg\n'}
+[4.686700] (rc_pwm_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rc_pwm_pkg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.700644] (rc_pwm_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rc_pwm_pkg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[4.728996] (-) TimerEvent: {}
+[4.730761] (rc_pwm_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rc_pwm_pkg__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.744181] (rc_pwm_pkg) StdoutLine: {'line': b'[ 23%] Built target rc_pwm_pkg__rosidl_typesupport_cpp\n'}
+[4.759354] (rc_pwm_pkg) StdoutLine: {'line': b'[ 33%] Built target rc_pwm_pkg__rosidl_typesupport_fastrtps_cpp\n'}
+[4.772196] (rc_pwm_pkg) StdoutLine: {'line': b'[ 43%] Built target rc_pwm_pkg__rosidl_typesupport_introspection_cpp\n'}
+[4.792304] (rc_pwm_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rc_pwm_pkg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[4.805454] (rc_pwm_pkg) StdoutLine: {'line': b'[ 53%] Built target rc_pwm_pkg__rosidl_typesupport_fastrtps_c\n'}
+[4.808382] (rc_pwm_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rc_pwm_pkg__rosidl_typesupport_c\x1b[0m\n'}
+[4.829322] (-) TimerEvent: {}
+[4.847060] (rc_pwm_pkg) StdoutLine: {'line': b'[ 64%] Built target rc_pwm_pkg__rosidl_typesupport_introspection_c\n'}
+[4.859330] (rc_pwm_pkg) StdoutLine: {'line': b'[ 74%] Built target rc_pwm_pkg__rosidl_typesupport_c\n'}
+[4.929496] (-) TimerEvent: {}
+[4.940164] (rc_pwm_pkg) StdoutLine: {'line': b'[ 74%] Built target rc_pwm_pkg\n'}
+[5.024706] (rc_pwm_pkg) StdoutLine: {'line': b'[ 76%] Built target rc_pwm_pkg__py\n'}
+[5.029724] (-) TimerEvent: {}
+[5.067591] (rc_pwm_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rc_pwm_pkg__rosidl_generator_py\x1b[0m\n'}
+[5.129937] (-) TimerEvent: {}
+[5.131397] (rc_pwm_pkg) StdoutLine: {'line': b'[ 84%] Built target rc_pwm_pkg__rosidl_generator_py\n'}
+[5.178190] (rc_pwm_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rc_pwm_pkg__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[5.180331] (rc_pwm_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rc_pwm_pkg__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[5.183527] (rc_pwm_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rc_pwm_pkg__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[5.230232] (-) TimerEvent: {}
+[5.248096] (rc_pwm_pkg) StdoutLine: {'line': b'[ 92%] Built target rc_pwm_pkg__rosidl_typesupport_introspection_c__pyext\n'}
+[5.249936] (rc_pwm_pkg) StdoutLine: {'line': b'[ 94%] Built target rc_pwm_pkg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.251234] (rc_pwm_pkg) StdoutLine: {'line': b'[100%] Built target rc_pwm_pkg__rosidl_typesupport_c__pyext\n'}
+[5.330396] (-) TimerEvent: {}
+[5.431000] (-) TimerEvent: {}
+[5.531607] (-) TimerEvent: {}
+[5.632197] (-) TimerEvent: {}
+[5.732793] (-) TimerEvent: {}
+[5.833392] (-) TimerEvent: {}
+[5.934026] (-) TimerEvent: {}
+[6.028141] (rc_pwm_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[6.030970] (rc_pwm_pkg) StdoutLine: {'line': b'writing rc_pwm_pkg.egg-info/PKG-INFO\n'}
+[6.032023] (rc_pwm_pkg) StdoutLine: {'line': b'writing dependency_links to rc_pwm_pkg.egg-info/dependency_links.txt\n'}
+[6.033060] (rc_pwm_pkg) StdoutLine: {'line': b'writing top-level names to rc_pwm_pkg.egg-info/top_level.txt\n'}
+[6.034180] (-) TimerEvent: {}
+[6.043299] (rc_pwm_pkg) StdoutLine: {'line': b"reading manifest file 'rc_pwm_pkg.egg-info/SOURCES.txt'\n"}
+[6.045840] (rc_pwm_pkg) StdoutLine: {'line': b"writing manifest file 'rc_pwm_pkg.egg-info/SOURCES.txt'\n"}
+[6.134460] (-) TimerEvent: {}
+[6.170839] (rc_pwm_pkg) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_rc_pwm_pkg_egg\n'}
+[6.210417] (rc_pwm_pkg) CommandEnded: {'returncode': 0}
+[6.213110] (rc_pwm_pkg) JobProgress: {'identifier': 'rc_pwm_pkg', 'progress': 'install'}
+[6.234618] (-) TimerEvent: {}
+[6.248157] (rc_pwm_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aimaim/rc_ws/build/rc_pwm_pkg'], 'cwd': '/home/aimaim/rc_ws/build/rc_pwm_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,1318,0'), ('USER', 'aimaim'), ('SSH_CLIENT', '192.168.1.172 62297 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/aimaim/rc_ws/install/rc_pwm_pkg/lib:/home/aimaim/ros2_humble/ros2-linux/opt/rviz_ogre_vendor/lib:/home/aimaim/ros2_humble/ros2-linux/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/aimaim'), ('OLDPWD', '/home/aimaim'), ('TERM_PROGRAM_VERSION', '3.2a'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LC_TERMINAL_VERSION', '3.5.10'), ('COLCON_PREFIX_PATH', '/home/aimaim/ros2_humble/ros2-linux:/home/aimaim/rc_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aimaim'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/aimaim/ros2_humble/ros2-linux/lib/aarch64-linux-gnu/pkgconfig:/home/aimaim/ros2_humble/ros2-linux/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'screen'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/aimaim/ros2_humble/ros2-linux/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/aimaim/rc_ws/install/rc:/home/aimaim/rc_ws/install/rc_pwm_pkg:/home/aimaim/ros2_humble/ros2-linux'), ('SHELL', '/bin/bash'), ('ROS_DISCOVERY_SERVER', '192.168.1.118:11811'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_TERMINAL', 'iTerm2'), ('PWD', '/home/aimaim/rc_ws/build/rc_pwm_pkg'), ('SSH_CONNECTION', '192.168.1.172 62297 192.168.1.190 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages:/home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages:/home/aimaim/ros2_humble/ros2-linux/local/lib/python3.10/dist-packages:/home/aimaim/ros2_humble/ros2-linux/lib/python3.10/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/home/aimaim/rc_ws/install/rc_pwm_pkg:/home/aimaim/ros2_humble/ros2-linux:/home/aimaim/rc_ws/install/rc')]), 'shell': False}
+[6.281585] (rc_pwm_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.282313] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/ament_index/resource_index/rosidl_interfaces/rc_pwm_pkg\n'}
+[6.282669] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg\n'}
+[6.283045] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg\n'}
+[6.283464] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/pub_pwm.h\n'}
+[6.283908] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/pwm.h\n'}
+[6.284251] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.284641] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail\n'}
+[6.284976] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__struct.h\n'}
+[6.285360] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__functions.h\n'}
+[6.285699] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__functions.c\n'}
+[6.286100] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__struct.h\n'}
+[6.286513] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__functions.h\n'}
+[6.286895] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__functions.c\n'}
+[6.287202] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__type_support.h\n'}
+[6.287495] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__type_support.h\n'}
+[6.287766] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/environment/library_path.sh\n'}
+[6.288040] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/environment/library_path.dsv\n'}
+[6.288765] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/lib/librc_pwm_pkg__rosidl_generator_c.so\n'}
+[6.289806] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg\n'}
+[6.290303] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg\n'}
+[6.290696] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.291032] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail\n'}
+[6.291377] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__rosidl_typesupport_fastrtps_c.h\n'}
+[6.291828] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__rosidl_typesupport_fastrtps_c.h\n'}
+[6.292692] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/lib/librc_pwm_pkg__rosidl_typesupport_fastrtps_c.so\n'}
+[6.293767] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg\n'}
+[6.294228] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg\n'}
+[6.294615] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail\n'}
+[6.294945] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__rosidl_typesupport_introspection_c.h\n'}
+[6.295317] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__rosidl_typesupport_introspection_c.h\n'}
+[6.295677] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__type_support.c\n'}
+[6.296075] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__type_support.c\n'}
+[6.296359] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.297043] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/lib/librc_pwm_pkg__rosidl_typesupport_introspection_c.so\n'}
+[6.298743] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/lib/librc_pwm_pkg__rosidl_typesupport_c.so\n'}
+[6.299689] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg\n'}
+[6.300083] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg\n'}
+[6.300428] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/pwm.hpp\n'}
+[6.300816] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/pub_pwm.hpp\n'}
+[6.301228] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail\n'}
+[6.301580] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__builder.hpp\n'}
+[6.301996] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__builder.hpp\n'}
+[6.302462] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__struct.hpp\n'}
+[6.302819] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__type_support.hpp\n'}
+[6.303240] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__traits.hpp\n'}
+[6.303610] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__struct.hpp\n'}
+[6.303962] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__type_support.hpp\n'}
+[6.304289] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__traits.hpp\n'}
+[6.304620] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.304947] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg\n'}
+[6.305291] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg\n'}
+[6.305662] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.305960] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail\n'}
+[6.306274] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.306551] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/dds_fastrtps\n'}
+[6.306949] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.307233] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/lib/librc_pwm_pkg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.307948] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg\n'}
+[6.308393] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg\n'}
+[6.308737] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail\n'}
+[6.309106] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.309479] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pub_pwm__type_support.cpp\n'}
+[6.309915] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.310296] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/include/rc_pwm_pkg/rc_pwm_pkg/msg/detail/pwm__type_support.cpp\n'}
+[6.310908] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/lib/librc_pwm_pkg__rosidl_typesupport_introspection_cpp.so\n'}
+[6.312627] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/lib/librc_pwm_pkg__rosidl_typesupport_cpp.so\n'}
+[6.313618] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/environment/pythonpath.sh\n'}
+[6.314017] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/environment/pythonpath.dsv\n'}
+[6.315179] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg-0.0.0-py3.10.egg-info\n'}
+[6.315651] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.316762] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.317828] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.319012] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.320224] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg\n'}
+[6.320745] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/rc_pwm_pkg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.321134] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/__init__.py\n'}
+[6.322030] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/rc_pwm_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.322500] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/_rc_pwm_pkg_s.ep.rosidl_typesupport_c.c\n'}
+[6.322960] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/_rc_pwm_pkg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.323352] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/rc_pwm_pkg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.323725] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/msg\n'}
+[6.324048] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/msg/__init__.py\n'}
+[6.324515] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/msg/_pwm_s.c\n'}
+[6.324863] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/msg/_pwm.py\n'}
+[6.325237] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/msg/_pub_pwm_s.c\n'}
+[6.325562] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/msg/_pub_pwm.py\n'}
+[6.325886] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/librc_pwm_pkg__rosidl_generator_py.so\n'}
+[6.326283] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/_rc_pwm_pkg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.334792] (-) TimerEvent: {}
+[6.435558] (-) TimerEvent: {}
+[6.467304] (rc_pwm_pkg) StdoutLine: {'line': b"Listing '/home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg'...\n"}
+[6.468568] (rc_pwm_pkg) StdoutLine: {'line': b"Compiling '/home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/__init__.py'...\n"}
+[6.469490] (rc_pwm_pkg) StdoutLine: {'line': b"Listing '/home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/msg'...\n"}
+[6.492010] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/rc_pwm_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.494002] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/rc_pwm_pkg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.496022] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages/rc_pwm_pkg/rc_pwm_pkg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.497857] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/lib/librc_pwm_pkg__rosidl_generator_py.so\n'}
+[6.498972] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/msg/Pwm.idl\n'}
+[6.499423] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/msg/PubPwm.idl\n'}
+[6.499845] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/msg/Pwm.msg\n'}
+[6.500254] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/msg/PubPwm.msg\n'}
+[6.501178] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/ament_index/resource_index/package_run_dependencies/rc_pwm_pkg\n'}
+[6.501604] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/ament_index/resource_index/parent_prefix_path/rc_pwm_pkg\n'}
+[6.502002] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/environment/ament_prefix_path.sh\n'}
+[6.502455] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/environment/ament_prefix_path.dsv\n'}
+[6.503614] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/environment/path.sh\n'}
+[6.504059] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/environment/path.dsv\n'}
+[6.505056] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/local_setup.bash\n'}
+[6.505516] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/local_setup.sh\n'}
+[6.505929] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/local_setup.zsh\n'}
+[6.506385] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/local_setup.dsv\n'}
+[6.507207] (rc_pwm_pkg) StdoutLine: {'line': b'-- Installing: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.dsv\n'}
+[6.508372] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/ament_index/resource_index/packages/rc_pwm_pkg\n'}
+[6.509070] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/export_rc_pwm_pkg__rosidl_generator_cExport.cmake\n'}
+[6.509573] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/export_rc_pwm_pkg__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.510267] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/export_rc_pwm_pkg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.510780] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/export_rc_pwm_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.511424] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rc_pwm_pkg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.511855] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rc_pwm_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.512587] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rc_pwm_pkg__rosidl_typesupport_cExport.cmake\n'}
+[6.513031] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rc_pwm_pkg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.513673] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/export_rc_pwm_pkg__rosidl_generator_cppExport.cmake\n'}
+[6.514524] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/export_rc_pwm_pkg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.515043] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/export_rc_pwm_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.515704] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rc_pwm_pkg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.516111] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rc_pwm_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.516848] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rc_pwm_pkg__rosidl_typesupport_cppExport.cmake\n'}
+[6.517297] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rc_pwm_pkg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.517979] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/export_rc_pwm_pkg__rosidl_generator_pyExport.cmake\n'}
+[6.518469] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/export_rc_pwm_pkg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.518891] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rosidl_cmake-extras.cmake\n'}
+[6.519272] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.519638] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.520024] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.520418] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.520819] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.521188] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.521556] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rc_pwm_pkgConfig.cmake\n'}
+[6.522016] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/cmake/rc_pwm_pkgConfig-version.cmake\n'}
+[6.522381] (rc_pwm_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/aimaim/rc_ws/install/rc_pwm_pkg/share/rc_pwm_pkg/package.xml\n'}
+[6.528309] (rc_pwm_pkg) CommandEnded: {'returncode': 0}
+[6.535722] (-) TimerEvent: {}
+[6.629053] (rc_pwm_pkg) JobEnded: {'identifier': 'rc_pwm_pkg', 'rc': 0}
+[6.633537] (rc) JobStarted: {'identifier': 'rc'}
+[6.636037] (-) TimerEvent: {}
+[6.736938] (-) TimerEvent: {}
+[6.837633] (-) TimerEvent: {}
+[6.938275] (-) TimerEvent: {}
+[7.038863] (-) TimerEvent: {}
+[7.139470] (-) TimerEvent: {}
+[7.240076] (-) TimerEvent: {}
+[7.340717] (-) TimerEvent: {}
+[7.441308] (-) TimerEvent: {}
+[7.541911] (-) TimerEvent: {}
+[7.642525] (-) TimerEvent: {}
+[7.743135] (-) TimerEvent: {}
+[7.843858] (-) TimerEvent: {}
+[7.944754] (-) TimerEvent: {}
+[8.045317] (-) TimerEvent: {}
+[8.145954] (-) TimerEvent: {}
+[8.246622] (-) TimerEvent: {}
+[8.347506] (-) TimerEvent: {}
+[8.448089] (-) TimerEvent: {}
+[8.548739] (-) TimerEvent: {}
+[8.649346] (-) TimerEvent: {}
+[8.749942] (-) TimerEvent: {}
+[8.850573] (-) TimerEvent: {}
+[8.951167] (-) TimerEvent: {}
+[9.051756] (-) TimerEvent: {}
+[9.152351] (-) TimerEvent: {}
+[9.253280] (-) TimerEvent: {}
+[9.354250] (-) TimerEvent: {}
+[9.454833] (-) TimerEvent: {}
+[9.555462] (-) TimerEvent: {}
+[9.656218] (-) TimerEvent: {}
+[9.731104] (rc) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/rc', 'build', '--build-base', '/home/aimaim/rc_ws/build/rc/build', 'install', '--record', '/home/aimaim/rc_ws/build/rc/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/aimaim/rc_ws/src/rc', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'TMUX': '/tmp/tmux-1000/default,1318,0', 'USER': 'aimaim', 'SSH_CLIENT': '192.168.1.172 62297 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/aimaim/rc_ws/install/rc_pwm_pkg/lib:/home/aimaim/ros2_humble/ros2-linux/opt/rviz_ogre_vendor/lib:/home/aimaim/ros2_humble/ros2-linux/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/aimaim', 'OLDPWD': '/home/aimaim', 'TERM_PROGRAM_VERSION': '3.2a', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LC_TERMINAL_VERSION': '3.5.10', 'COLCON_PREFIX_PATH': '/home/aimaim/ros2_humble/ros2-linux:/home/aimaim/rc_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'aimaim', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/aimaim/ros2_humble/ros2-linux/lib/aarch64-linux-gnu/pkgconfig:/home/aimaim/ros2_humble/ros2-linux/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'screen', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/aimaim/ros2_humble/ros2-linux/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'tmux', 'ROS_DOMAIN_ID': '10', 'AMENT_PREFIX_PATH': '/home/aimaim/rc_ws/install/rc:/home/aimaim/rc_ws/install/rc_pwm_pkg:/home/aimaim/ros2_humble/ros2-linux', 'SHELL': '/bin/bash', 'ROS_DISCOVERY_SERVER': '192.168.1.118:11811', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_TERMINAL': 'iTerm2', 'PWD': '/home/aimaim/rc_ws/build/rc', 'SSH_CONNECTION': '192.168.1.172 62297 192.168.1.190 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/aimaim/rc_ws/build/rc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages:/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages:/home/aimaim/rc_ws/install/rc_pwm_pkg/local/lib/python3.10/dist-packages:/home/aimaim/ros2_humble/ros2-linux/local/lib/python3.10/dist-packages:/home/aimaim/ros2_humble/ros2-linux/lib/python3.10/site-packages', 'COLCON': '1', 'TMUX_PANE': '%0', 'CMAKE_PREFIX_PATH': '/home/aimaim/rc_ws/install/rc_pwm_pkg:/home/aimaim/ros2_humble/ros2-linux'}, 'shell': False}
+[9.756359] (-) TimerEvent: {}
+[9.856987] (-) TimerEvent: {}
+[9.957735] (-) TimerEvent: {}
+[10.058466] (-) TimerEvent: {}
+[10.159097] (-) TimerEvent: {}
+[10.259676] (-) TimerEvent: {}
+[10.360290] (-) TimerEvent: {}
+[10.460912] (-) TimerEvent: {}
+[10.561467] (-) TimerEvent: {}
+[10.662114] (-) TimerEvent: {}
+[10.762730] (-) TimerEvent: {}
+[10.863354] (-) TimerEvent: {}
+[10.876814] (rc) StdoutLine: {'line': b'running egg_info\n'}
+[10.879454] (rc) StdoutLine: {'line': b'writing ../../build/rc/rc.egg-info/PKG-INFO\n'}
+[10.880496] (rc) StdoutLine: {'line': b'writing dependency_links to ../../build/rc/rc.egg-info/dependency_links.txt\n'}
+[10.881266] (rc) StdoutLine: {'line': b'writing entry points to ../../build/rc/rc.egg-info/entry_points.txt\n'}
+[10.882099] (rc) StdoutLine: {'line': b'writing requirements to ../../build/rc/rc.egg-info/requires.txt\n'}
+[10.882761] (rc) StdoutLine: {'line': b'writing top-level names to ../../build/rc/rc.egg-info/top_level.txt\n'}
+[10.890547] (rc) StdoutLine: {'line': b"reading manifest file '../../build/rc/rc.egg-info/SOURCES.txt'\n"}
+[10.891799] (rc) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[10.893914] (rc) StdoutLine: {'line': b"writing manifest file '../../build/rc/rc.egg-info/SOURCES.txt'\n"}
+[10.894559] (rc) StdoutLine: {'line': b'running build\n'}
+[10.895007] (rc) StdoutLine: {'line': b'running build_py\n'}
+[10.895599] (rc) StdoutLine: {'line': b'copying rc/rc_control.py -> /home/aimaim/rc_ws/build/rc/build/lib/rc\n'}
+[10.896798] (rc) StdoutLine: {'line': b'running install\n'}
+[10.897972] (rc) StdoutLine: {'line': b'running install_lib\n'}
+[10.901251] (rc) StdoutLine: {'line': b'copying /home/aimaim/rc_ws/build/rc/build/lib/rc/rc_control.py -> /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc\n'}
+[10.903801] (rc) StdoutLine: {'line': b'byte-compiling /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc/rc_control.py to rc_control.cpython-310.pyc\n'}
+[10.906872] (rc) StdoutLine: {'line': b'running install_data\n'}
+[10.907521] (rc) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.914737] (rc) StdoutLine: {'line': b"removing '/home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[10.916306] (rc) StdoutLine: {'line': b'Copying ../../build/rc/rc.egg-info to /home/aimaim/rc_ws/install/rc/lib/python3.10/site-packages/rc-0.0.0-py3.10.egg-info\n'}
+[10.920893] (rc) StdoutLine: {'line': b'running install_scripts\n'}
+[10.963508] (-) TimerEvent: {}
+[10.996150] (rc) StdoutLine: {'line': b'Installing listener script to /home/aimaim/rc_ws/install/rc/lib/rc\n'}
+[10.997706] (rc) StdoutLine: {'line': b"writing list of installed files to '/home/aimaim/rc_ws/build/rc/install.log'\n"}
+[11.063800] (-) TimerEvent: {}
+[11.112513] (rc) CommandEnded: {'returncode': 0}
+[11.141313] (rc) JobEnded: {'identifier': 'rc', 'rc': 0}
+[11.144169] (-) EventReactorShutdown: {}

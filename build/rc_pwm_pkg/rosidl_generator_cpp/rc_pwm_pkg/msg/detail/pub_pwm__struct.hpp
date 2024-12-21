@@ -38,6 +38,7 @@ struct PubPwm_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->dirr = 0ll;
       this->left_pwm = 0ll;
       this->right_pwm = 0ll;
     }
@@ -49,12 +50,16 @@ struct PubPwm_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->dirr = 0ll;
       this->left_pwm = 0ll;
       this->right_pwm = 0ll;
     }
   }
 
   // field types and members
+  using _dirr_type =
+    int64_t;
+  _dirr_type dirr;
   using _left_pwm_type =
     int64_t;
   _left_pwm_type left_pwm;
@@ -63,6 +68,12 @@ struct PubPwm_
   _right_pwm_type right_pwm;
 
   // setters for named parameter idiom
+  Type & set__dirr(
+    const int64_t & _arg)
+  {
+    this->dirr = _arg;
+    return *this;
+  }
   Type & set__left_pwm(
     const int64_t & _arg)
   {
@@ -118,6 +129,9 @@ struct PubPwm_
   // comparison operators
   bool operator==(const PubPwm_ & other) const
   {
+    if (this->dirr != other.dirr) {
+      return false;
+    }
     if (this->left_pwm != other.left_pwm) {
       return false;
     }

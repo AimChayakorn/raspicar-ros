@@ -31,8 +31,8 @@ class MinimalSubscriber(Node):
         GPIO.setup(self.gpio_pin3, GPIO.OUT)
         GPIO.setup(self.gpio_pin4, GPIO.OUT)
         
-        GPIO.output(self.gpio_pin2, GPIO.HIGH)
-        GPIO.output(self.gpio_pin4, GPIO.HIGH)
+        #GPIO.output(self.gpio_pin2, GPIO.HIGH)
+        #GPIO.output(self.gpio_pin4, GPIO.HIGH)
         
         self.pwm_right = GPIO.PWM(self.gpio_pin3, freq)
         self.pwm_left = GPIO.PWM(self.gpio_pin1, freq) 
@@ -41,19 +41,20 @@ class MinimalSubscriber(Node):
         self.pwm_right.start(100)
 
     def listener_callback(self, msg):
-        l_pwm = 100 - msg.left_pwm
-        r_pwm = 100 - msg.right_pwm
-        if l_pwm < 0:
-            l_pwm = 0
-        elif l_pwm > 100:
-            l_pwm = 100
-        if r_pwm < 0:
-            r_pwm = 100
-        elif r_pwm > 100:
-            r_pwm = 100
+        if msg.dirr == 0:
+            GPIO.output(self.gpio_pin2, GPIO.HIGH)
+            GPIO.output(self.gpio_pin4, GPIO.HIGH)
+            l_pwm = 100 - msg.left_pwm
+            r_pwm = 100 - msg.right_pwm
+        elif msg.dirr == 1:
+            GPIO.output(self.gpio_pin2, GPIO.LOW)
+            GPIO.output(self.gpio_pin4, GPIO.LOW)
+            l_pwm = msg.left_pwm
+            r_pwm = msg.right_pwm
+
         self.pwm_left.ChangeDutyCycle(l_pwm)
         self.pwm_right.ChangeDutyCycle(r_pwm)
-        self.get_logger().info(f'Current left : {msg.left_pwm} , right : {msg.right_pwm}')
+        self.get_logger().info(f'Current direction: {msg.dirr}, left : {msg.left_pwm} , right : {msg.right_pwm}')
 
     def destroy_node(self):
         GPIO.cleanup()

@@ -31,7 +31,24 @@ void rc_pwm_pkg__msg__PubPwm__rosidl_typesupport_introspection_c__PubPwm_fini_fu
   rc_pwm_pkg__msg__PubPwm__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember rc_pwm_pkg__msg__PubPwm__rosidl_typesupport_introspection_c__PubPwm_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember rc_pwm_pkg__msg__PubPwm__rosidl_typesupport_introspection_c__PubPwm_message_member_array[3] = {
+  {
+    "dirr",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(rc_pwm_pkg__msg__PubPwm, dirr),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "left_pwm",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
@@ -71,7 +88,7 @@ static rosidl_typesupport_introspection_c__MessageMember rc_pwm_pkg__msg__PubPwm
 static const rosidl_typesupport_introspection_c__MessageMembers rc_pwm_pkg__msg__PubPwm__rosidl_typesupport_introspection_c__PubPwm_message_members = {
   "rc_pwm_pkg__msg",  // message namespace
   "PubPwm",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(rc_pwm_pkg__msg__PubPwm),
   rc_pwm_pkg__msg__PubPwm__rosidl_typesupport_introspection_c__PubPwm_message_member_array,  // message members
   rc_pwm_pkg__msg__PubPwm__rosidl_typesupport_introspection_c__PubPwm_init_function,  // function to initialize message memory (memory has to be allocated)

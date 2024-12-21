@@ -37,7 +37,24 @@ void PubPwm_fini_function(void * message_memory)
   typed_message->~PubPwm();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember PubPwm_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember PubPwm_message_member_array[3] = {
+  {
+    "dirr",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(rc_pwm_pkg::msg::PubPwm, dirr),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "left_pwm",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
@@ -77,7 +94,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember PubPwm_messag
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers PubPwm_message_members = {
   "rc_pwm_pkg::msg",  // message namespace
   "PubPwm",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(rc_pwm_pkg::msg::PubPwm),
   PubPwm_message_member_array,  // message members
   PubPwm_init_function,  // function to initialize message memory (memory has to be allocated)

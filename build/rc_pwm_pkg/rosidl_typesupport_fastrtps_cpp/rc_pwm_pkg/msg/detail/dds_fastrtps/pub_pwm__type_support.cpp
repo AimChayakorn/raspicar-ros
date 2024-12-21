@@ -32,6 +32,8 @@ cdr_serialize(
   const rc_pwm_pkg::msg::PubPwm & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: dirr
+  cdr << ros_message.dirr;
   // Member: left_pwm
   cdr << ros_message.left_pwm;
   // Member: right_pwm
@@ -45,6 +47,9 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   rc_pwm_pkg::msg::PubPwm & ros_message)
 {
+  // Member: dirr
+  cdr >> ros_message.dirr;
+
   // Member: left_pwm
   cdr >> ros_message.left_pwm;
 
@@ -67,6 +72,12 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
+  // Member: dirr
+  {
+    size_t item_size = sizeof(ros_message.dirr);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // Member: left_pwm
   {
     size_t item_size = sizeof(ros_message.left_pwm);
@@ -102,6 +113,15 @@ max_serialized_size_PubPwm(
   full_bounded = true;
   is_plain = true;
 
+
+  // Member: dirr
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
 
   // Member: left_pwm
   {

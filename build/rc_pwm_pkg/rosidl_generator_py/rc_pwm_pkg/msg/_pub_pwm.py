@@ -55,16 +55,19 @@ class PubPwm(metaclass=Metaclass_PubPwm):
     """Message class 'PubPwm'."""
 
     __slots__ = [
+        '_dirr',
         '_left_pwm',
         '_right_pwm',
     ]
 
     _fields_and_field_types = {
+        'dirr': 'int64',
         'left_pwm': 'int64',
         'right_pwm': 'int64',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
         rosidl_parser.definition.BasicType('int64'),  # noqa: E501
         rosidl_parser.definition.BasicType('int64'),  # noqa: E501
     )
@@ -73,6 +76,7 @@ class PubPwm(metaclass=Metaclass_PubPwm):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.dirr = kwargs.get('dirr', int())
         self.left_pwm = kwargs.get('left_pwm', int())
         self.right_pwm = kwargs.get('right_pwm', int())
 
@@ -105,6 +109,8 @@ class PubPwm(metaclass=Metaclass_PubPwm):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.dirr != other.dirr:
+            return False
         if self.left_pwm != other.left_pwm:
             return False
         if self.right_pwm != other.right_pwm:
@@ -115,6 +121,21 @@ class PubPwm(metaclass=Metaclass_PubPwm):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def dirr(self):
+        """Message field 'dirr'."""
+        return self._dirr
+
+    @dirr.setter
+    def dirr(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'dirr' field must be of type 'int'"
+            assert value >= -9223372036854775808 and value < 9223372036854775808, \
+                "The 'dirr' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+        self._dirr = value
 
     @builtins.property
     def left_pwm(self):

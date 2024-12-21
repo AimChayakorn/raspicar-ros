@@ -49,6 +49,11 @@ static bool _PubPwm__cdr_serialize(
     return false;
   }
   const _PubPwm__ros_msg_type * ros_message = static_cast<const _PubPwm__ros_msg_type *>(untyped_ros_message);
+  // Field name: dirr
+  {
+    cdr << ros_message->dirr;
+  }
+
   // Field name: left_pwm
   {
     cdr << ros_message->left_pwm;
@@ -71,6 +76,11 @@ static bool _PubPwm__cdr_deserialize(
     return false;
   }
   _PubPwm__ros_msg_type * ros_message = static_cast<_PubPwm__ros_msg_type *>(untyped_ros_message);
+  // Field name: dirr
+  {
+    cdr >> ros_message->dirr;
+  }
+
   // Field name: left_pwm
   {
     cdr >> ros_message->left_pwm;
@@ -98,6 +108,12 @@ size_t get_serialized_size_rc_pwm_pkg__msg__PubPwm(
   (void)padding;
   (void)wchar_size;
 
+  // field.name dirr
+  {
+    size_t item_size = sizeof(ros_message->dirr);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name left_pwm
   {
     size_t item_size = sizeof(ros_message->left_pwm);
@@ -139,6 +155,14 @@ size_t max_serialized_size_rc_pwm_pkg__msg__PubPwm(
   full_bounded = true;
   is_plain = true;
 
+  // member: dirr
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
   // member: left_pwm
   {
     size_t array_size = 1;
