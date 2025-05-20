@@ -1,7 +1,0 @@
-{
-  "package_name": "rc_pwm_pkg",
-  "non_idl_tuples": [
-    "/home/aimaim/rc_ws/src/rc_pwm_pkg:msg/Pwm.msg",
-    "/home/aimaim/rc_ws/src/rc_pwm_pkg:msg/PubPwm.msg"
-  ]
-}
