@@ -1,0 +1,39 @@
+# Build artifacts
+build/
+log/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ROS launch config logs
+*.launch.*~
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ROS-generated messages and services
+msg_gen/
+srv_gen/
+action_gen/
+
+# Colcon build (ROS2)
+.colcon/
+*.log
+*.bash
+
+# Catkin tools
+.catkin_tools/
+
+# ROSBag files
+*.bag
+*.bag.active
+
+# Env files
+.env
+*.env
