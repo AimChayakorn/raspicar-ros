@@ -46,3 +46,8 @@ colcon build
 ```bash
 ros2 run rc listener
 ```
+
+or to start all node
+```bash
+ros2 launch rc script.xml
+```
