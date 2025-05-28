@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             'listener = rc.rc_control:main',
             'video = rc.video_pub:main',
+            'test = rc.test_motor:main',
         ],
     },
 )
